@@ -45,9 +45,6 @@ final class User extends Authenticatable
         return $this->belongsToMany(WebSite::class, 'subscriptions', 'user_id', 'website_id');
     }
 
-
-
-
     /**
      * Get the attributes that should be cast.
      *

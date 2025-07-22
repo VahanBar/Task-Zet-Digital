@@ -23,6 +23,4 @@ final class WebSite extends Model
         return $this->belongsToMany(User::class, 'subscriptions', 'website_id', 'user_id')
             ->withTimestamps();
     }
-
-
 }
